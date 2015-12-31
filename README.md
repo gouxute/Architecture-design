@@ -6,4 +6,5 @@ Developed with C++, OpenGL, Qt, RMMV is an environmental analysis tool that allo
  1.Draw 3D buildings.<br> 
  2.Simulate illumination intensity achitecture.<br> 
 ## Note
-The project was developed under the follows environment: Qt 5.4,OpenGL 4.3,vs2012
+The project was developed under the follows environment: Qt 5.4,OpenGL 4.3,vs2012<br>
+The release version  is : https://goo.gl/vPUhPt. Executed file is RMMV.exe.
