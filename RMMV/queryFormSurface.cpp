@@ -1,0 +1,11 @@
+#include"queryFormSurface.h"
+#include"ui_queryFormSurface.h"
+#include"sharedata.h"
+#include<qmessagebox.h>
+queryFormSurface::queryFormSurface(QWidget*parent):
+QDialog(parent)
+{
+	ui.setupUi(this);
+}
+queryFormSurface::~queryFormSurface(){
+}

@@ -1,0 +1,6780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RMMV</class>
+ <widget class="QMainWindow" name="RMMV">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>943</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>E3</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="GLWidget" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>651</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);
+</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>0</y>
+      <width>261</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::West</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideLeft</enum>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/dian.jpg</normaloff>:/E3/Resources/dian.jpg</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>181</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>选择信息</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 85, 127);</string>
+       </property>
+       <property name="text">
+        <string>区域编号</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>50</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 85, 127);</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>名称：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>70</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>90</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_4">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>110</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_5">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>130</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_6">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>150</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>颜色：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>冻结：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>隐藏：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>锁定：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_7">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>170</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>热量：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_8">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>190</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>190</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>状态：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>210</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 85, 127);</string>
+       </property>
+       <property name="text">
+        <string>阴影颜色</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_9">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>230</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>230</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>高亮：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_10">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>250</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>250</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>阴影：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_11">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>270</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>270</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>反射：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>290</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 85, 127);</string>
+       </property>
+       <property name="text">
+        <string>区域编号</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>310</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>天空照度：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_12">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>310</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QCommandLinkButton" name="commandLinkButton">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>31</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_65">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>0</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>选择信息</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/quyu1.jpg</normaloff>:/E3/Resources/quyu1.jpg</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>191</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="currentIndex">
+       <number>11</number>
+      </property>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>A</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>B</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>C</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>D</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>E</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_10">
+       <attribute name="title">
+        <string>F</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_11">
+       <attribute name="title">
+        <string>G</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_12">
+       <attribute name="title">
+        <string>H</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_13">
+       <attribute name="title">
+        <string>I</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_14">
+       <attribute name="title">
+        <string>J</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_15">
+       <attribute name="title">
+        <string>K</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_16">
+       <attribute name="title">
+        <string>L</string>
+       </attribute>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>区域管理</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/caizia.jpg</normaloff>:/E3/Resources/caizia.jpg</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(213, 205, 255);</string>
+      </property>
+      <property name="text">
+       <string>首选：[没有选择]</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(213, 205, 255);</string>
+      </property>
+      <property name="text">
+       <string>可选：[没有选择]</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_67">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>材质分配</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_TextureSave">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>158</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label_75">
+           <property name="text">
+            <string>类别：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_74">
+           <property name="text">
+            <string>材质：</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QComboBox" name="comboBox_TextureFirst">
+           <item>
+            <property name="text">
+             <string>洞</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>屋顶</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>地板</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>天花</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>墙</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>隔断</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>窗</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>镶板</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>门</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>发声体</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>光源</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>器具</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>线</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>太阳能采集装置</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>相机</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_TextureSecond"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/touying.jpg</normaloff>:/E3/Resources/touying.jpg</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>投影设置</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>211</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 235, 242);</string>
+      </property>
+      <property name="title">
+       <string>投影显示</string>
+      </property>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>日运行轨迹</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>年运行轨迹</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>平面中建筑遮挡阴影</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>仅显示阴影边线</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>在地面显示阴影边线</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>120</y>
+         <width>211</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>150</y>
+         <width>211</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>反转阴影属性</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>隐藏区域可投摄阴影</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>透明反射</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>仅选定的物体</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>240</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>显示反射障碍</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>180</y>
+         <width>151</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>隐藏区域可接受阴影</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>260</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>仅显示反射</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>280</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>仅显示阴影</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>300</y>
+         <width>211</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_14">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>310</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>夏令时</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>380</y>
+        <width>241</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>显示阴影</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>400</y>
+        <width>241</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>从太阳位置观察</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>430</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 235, 242);</string>
+      </property>
+      <property name="title">
+       <string>物体标记为</string>
+      </property>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>受影体</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="comboBox_3">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>20</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>反光体</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>490</y>
+        <width>221</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 235, 242);</string>
+      </property>
+      <property name="title">
+       <string>投影范围</string>
+      </property>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>开始：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>结束：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>间隔：</string>
+       </property>
+      </widget>
+      <widget class="QTimeEdit" name="timeEdit">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>71</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QTimeEdit" name="timeEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>30</y>
+         <width>71</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>50</y>
+         <width>231</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>投影变化范围</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>580</y>
+        <width>231</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 235, 242);</string>
+      </property>
+      <property name="title">
+       <string>显示日光射线</string>
+      </property>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>间隔：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>60</y>
+         <width>231</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>显示日光</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>20</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>次数：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_14">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>680</y>
+        <width>231</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 235, 242);</string>
+      </property>
+      <property name="title">
+       <string>反向投影日光</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>231</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>显示投影</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_17">
+     <attribute name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/fiwg.jpg</normaloff>:/E3/Resources/fiwg.jpg</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>0</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>分析网格</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>221</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 235, 242);</string>
+      </property>
+      <property name="title">
+       <string>网格显示</string>
+      </property>
+      <widget class="QCheckBox" name="checkBox_15">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>显示网格线</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_16">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>显示点参数</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_17">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>显示实体网格</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_18">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>显示变化边线</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_19">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>剪切到最小</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>120</y>
+         <width>221</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>140</y>
+         <width>221</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_20">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>显示平均值</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_21">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>三维显示</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_29">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>显示网格轴线</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_gridEnable">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>190</y>
+         <width>221</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>显示分析网格</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_gridManage">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>221</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>网格管理</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>240</y>
+        <width>221</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(238, 255, 198);</string>
+      </property>
+      <property name="title">
+       <string>网格数据和范围</string>
+      </property>
+      <widget class="QComboBox" name="comboBox_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>211</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>[无可用数据]</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>最小值：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_15">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>50</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_16">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>70</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>最大值：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>轮廓线</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_17">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>90</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_9">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>360</y>
+        <width>221</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(238, 255, 198);</string>
+      </property>
+      <property name="title">
+       <string>网格位置</string>
+      </property>
+      <widget class="QLabel" name="label_29">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>轴线：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>偏移</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_showgrid">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>60</y>
+         <width>221</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>适合模型</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>221</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>调整网格范围</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>20</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="radioButton_grid_xy">
+          <property name="text">
+           <string>XY</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_grid_xz">
+          <property name="text">
+           <string>XZ</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_grid_yz">
+          <property name="text">
+           <string>YZ</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QDoubleSpinBox" name="doubleSpinBox_tran_xyz">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>161</width>
+         <height>16</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>470</y>
+        <width>221</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(238, 255, 198);</string>
+      </property>
+      <property name="title">
+       <string>网格位置</string>
+      </property>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>轴线：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_20">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>20</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_21">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>40</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>偏移</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>60</y>
+         <width>221</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>适合模型</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_11">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>221</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>调整网格范围</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>580</y>
+        <width>221</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(238, 255, 198);</string>
+      </property>
+      <property name="title">
+       <string>网格点</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_12">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>111</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>隐藏</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_13">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>221</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>选择网格点</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_14">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>20</y>
+         <width>101</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>显示</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_12">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>650</y>
+        <width>221</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 235, 242);</string>
+      </property>
+      <property name="title">
+       <string>计算</string>
+      </property>
+      <widget class="QRadioButton" name="radioButton">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>采光系数和照度</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>20</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>日平均太阳辐射</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>房间热舒适度</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_4">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>40</y>
+         <width>89</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>CFD维元锁定</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>60</y>
+         <width>89</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>加载CDF数据</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_15">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>221</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>执行计算</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_18">
+     <attribute name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/shbolizi.jpg</normaloff>:/E3/Resources/shbolizi.jpg</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>0</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>声波和粒子</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_13">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>480</y>
+        <width>231</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 202, 175);</string>
+      </property>
+      <property name="title">
+       <string>动画</string>
+      </property>
+      <widget class="QCheckBox" name="checkBox_22">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>鼠标滚轮控制</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_30">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>隐藏临界值以下声波</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_22">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>31</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>&lt;&lt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_23">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>31</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_24">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>40</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QCommandLinkButton" name="commandLinkButton_2">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>30</y>
+         <width>31</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QSlider" name="horizontalSlider_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>201</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>90</number>
+       </property>
+       <property name="singleStep">
+        <number>1</number>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="tracking">
+        <bool>true</bool>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::NoTicks</enum>
+       </property>
+       <property name="tickInterval">
+        <number>4</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_40">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>持续时间：</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_8">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>90</y>
+         <width>221</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_41">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>130</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>临界声压级：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_25">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>130</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>-60.000</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_14">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 235, 242);</string>
+      </property>
+      <property name="title">
+       <string>物体标记</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_18">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>声源</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_19">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>20</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>反声体</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_15">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>221</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 207, 179);</string>
+      </property>
+      <property name="title">
+       <string>生成声波</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_21">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>160</y>
+         <width>221</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>生成声波</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>221</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>发射到标记声反射体</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>球面分布-随机</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>球面分布-平均</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>图形图样</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_34">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>方位角范围</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="horizontalSlider">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>201</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>90</number>
+       </property>
+       <property name="singleStep">
+        <number>1</number>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+       <property name="tracking">
+        <bool>true</bool>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBelow</enum>
+       </property>
+       <property name="tickInterval">
+        <number>4</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>50</y>
+         <width>16</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>90</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_36">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>高度角范围</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_37">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>90</y>
+         <width>16</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>45</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="horizontalSlider_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>201</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>45</number>
+       </property>
+       <property name="singleStep">
+        <number>1</number>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+       <property name="tracking">
+        <bool>true</bool>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBelow</enum>
+       </property>
+       <property name="tickInterval">
+        <number>4</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>120</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>声波数量：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_39">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>120</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>次数：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_22">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>140</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_23">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>140</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_31">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>180</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>仅测试声反射体</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_16">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>280</y>
+        <width>221</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 235, 242);</string>
+      </property>
+      <property name="title">
+       <string>显示设置</string>
+      </property>
+      <widget class="QRadioButton" name="radioButton_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>静态声波线</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_7">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>20</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>发射覆盖范围</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_8">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>表面入射点</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_9">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>40</y>
+         <width>89</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>动态粒子</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_10">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>60</y>
+         <width>89</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>动态生成波</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_20">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>140</y>
+         <width>221</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>显示声波线/粒子</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>221</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>显示绝对值</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>显示相对值</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>显示发射距离</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="comboBox_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>110</y>
+         <width>141</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>[无]</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>声压级(db)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>延迟(ms)</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="comboBox_8">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>110</y>
+         <width>71</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>63Hz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>125Hz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>250Hz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>500Hz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1kHz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2kHz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4kHz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8kHz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>16kHz</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_32">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>旋转显示声波线</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_33">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>170</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>强化粒子效果</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_17">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>640</y>
+        <width>221</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 235, 242);</string>
+      </property>
+      <property name="title">
+       <string>声波信息</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_24">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>221</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>声学响应</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_42">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>声波数量：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_43">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_44">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>所用内存：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_45">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>40</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0 k</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_25">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>60</y>
+         <width>101</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>导入</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_26">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>60</y>
+         <width>121</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>清除</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_19">
+     <attribute name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/canshuhua.jpg</normaloff>:/E3/Resources/canshuhua.jpg</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QLabel" name="label_46">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>参数化物体</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_2">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>30</y>
+        <width>231</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_9">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>140</y>
+        <width>141</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>坡屋顶</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>矩形区域</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>环形/柱状/圆锥</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>半球体</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>网格球顶</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>三角形屋顶</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>四坡屋顶</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>螺旋体</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_26">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(96,96,96);</string>
+      </property>
+      <property name="text">
+       <string>A</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_27">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="text">
+       <string>屋顶类型：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_28">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>180</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="text">
+       <string>屋顶类型：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_29">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(96,96,96);</string>
+      </property>
+      <property name="text">
+       <string>B</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_30">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>200</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="text">
+       <string>屋顶类型：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_31">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>200</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(96,96,96);</string>
+      </property>
+      <property name="text">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_32">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="text">
+       <string>屋顶类型：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_33">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(96,96,96);</string>
+      </property>
+      <property name="text">
+       <string>D</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_34">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>240</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="text">
+       <string>屋顶类型：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_35">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(96,96,96);</string>
+      </property>
+      <property name="text">
+       <string>E</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_36">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>260</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="text">
+       <string>屋顶类型：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_37">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(96,96,96);</string>
+      </property>
+      <property name="text">
+       <string>F</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_38">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>280</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="text">
+       <string>屋顶类型：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_39">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(96,96,96);</string>
+      </property>
+      <property name="text">
+       <string>G</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_40">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>300</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="text">
+       <string>屋顶类型：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_41">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(96,96,96);</string>
+      </property>
+      <property name="text">
+       <string>H</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_42">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>320</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="text">
+       <string>屋顶类型：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_43">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>320</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(96,96,96);</string>
+      </property>
+      <property name="text">
+       <string>I</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_44">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>340</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="text">
+       <string>屋顶类型：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_45">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>340</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(96,96,96);</string>
+      </property>
+      <property name="text">
+       <string>J</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_46">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>160</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_47">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>180</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_48">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>200</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_49">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>220</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_50">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>240</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_51">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>260</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_52">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>280</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_53">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>300</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_54">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>320</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_55">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>340</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_20">
+     <attribute name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/wutibianx.jpg</normaloff>:/E3/Resources/wutibianx.jpg</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QLabel" name="label_47">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>物体变形</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_16">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="RMMV.qrc">
+        <normaloff>:/E3/Resources/tutu.jpg</normaloff>:/E3/Resources/tutu.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_18">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>221</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="title">
+       <string>变形</string>
+      </property>
+      <widget class="QCheckBox" name="checkBox_34">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>120</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_17">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>160</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>创建阵列</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_27">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>140</y>
+         <width>221</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>应用修改</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_10">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>141</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>移动</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>旋转-轴</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>旋转-点</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>缩放</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>镜像</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>拉伸-向量</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>拉伸-常规</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>旋转</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>绕中心旋转</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_48">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>X偏移：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_56">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>50</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_49">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>X偏移：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_57">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>70</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_50">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>X偏移：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_58">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>90</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_51">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">gridline-color: rgb(255, 89, 142);</string>
+       </property>
+       <property name="text">
+        <string>变形向量</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_59">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>160</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_19">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>270</y>
+        <width>221</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="title">
+       <string>方向</string>
+      </property>
+      <widget class="QLineEdit" name="lineEdit_63">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_64">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_55">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>高度角：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_56">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>方位角：</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_28">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>60</y>
+         <width>221</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>应用方向调整</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_20">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>370</y>
+        <width>221</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="title">
+       <string>中心阵列</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_29">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>110</y>
+         <width>221</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>创建阵列</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_35">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>10</y>
+         <width>16</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_52">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>10</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">gridline-color: rgb(255, 89, 142);</string>
+       </property>
+       <property name="text">
+        <string>阵列数组</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_53">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>轴线：</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_11">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>141</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>X-轴</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Y-轴</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Z-轴</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_54">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>增量角：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_60">
+       <property name="geometry">
+        <rect>
+         <x>82</x>
+         <y>60</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_57">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>阵列数量：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_61">
+       <property name="geometry">
+        <rect>
+         <x>82</x>
+         <y>80</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_21">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>520</y>
+        <width>221</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(128, 128, 128);</string>
+      </property>
+      <property name="title">
+       <string>线性阵列</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_30">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>221</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>创建阵列</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_36">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>10</y>
+         <width>16</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_58">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>10</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">gridline-color: rgb(255, 89, 142);</string>
+       </property>
+       <property name="text">
+        <string>阵列编组</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_59">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>X向偏移：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_61">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>50</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>阵列数量：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_65">
+       <property name="geometry">
+        <rect>
+         <x>132</x>
+         <y>50</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_66">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>30</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_62">
+       <property name="geometry">
+        <rect>
+         <x>78</x>
+         <y>100</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>阵列数量：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_67">
+       <property name="geometry">
+        <rect>
+         <x>78</x>
+         <y>80</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_68">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>100</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_60">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>80</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Y向偏移：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_69">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>130</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_70">
+       <property name="geometry">
+        <rect>
+         <x>132</x>
+         <y>150</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_63">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>150</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>阵列数量：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_64">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Z向偏移：</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_21">
+     <attribute name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/shuchuguanli.jpg</normaloff>:/E3/Resources/shuchuguanli.jpg</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QLabel" name="label_66">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>输出管理器</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_31">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(187, 255, 227);</string>
+      </property>
+      <property name="text">
+       <string>VRML</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_32">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(187, 255, 227);</string>
+      </property>
+      <property name="text">
+       <string>RADIANCE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_33">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(187, 255, 227);</string>
+      </property>
+      <property name="text">
+       <string>POV-Ray</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_34">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>100</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(187, 255, 227);</string>
+      </property>
+      <property name="text">
+       <string>AUTOCAD DXF</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_35">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>120</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(187, 255, 227);</string>
+      </property>
+      <property name="text">
+       <string>WINAIR4 (CFD)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_36">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>140</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(187, 255, 227);</string>
+      </property>
+      <property name="text">
+       <string>HTB2 (THERMAL)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_37">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>160</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(187, 255, 227);</string>
+      </property>
+      <property name="text">
+       <string>ENERGYPLUS</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_38">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>180</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(187, 255, 227);</string>
+      </property>
+      <property name="text">
+       <string>ESP-r</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_22">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>200</y>
+        <width>211</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="pushButton_39">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string>输出模型数据(&amp;X)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_40">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>10</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(187, 255, 227);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="RMMV.qrc">
+         <normaloff>:/E3/Resources/shuchugli2.jpg</normaloff>:/E3/Resources/shuchugli2.jpg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="textBrowser">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>211</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(150, 150, 150);</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ESP-r是由Strathclyde大学的ESRU开发的一套综合建模工具。虽然是基于unix内核的，但其Cygwin版可以在Windows下运行。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>943</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <widget class="QMenu" name="menu_R">
+     <property name="title">
+      <string>最近加载过的文件(R)</string>
+     </property>
+     <addaction name="action_Z_2"/>
+    </widget>
+    <addaction name="action_N"/>
+    <addaction name="action_W"/>
+    <addaction name="separator"/>
+    <addaction name="action_O"/>
+    <addaction name="menu_R"/>
+    <addaction name="action_V"/>
+    <addaction name="separator"/>
+    <addaction name="action_S"/>
+    <addaction name="action_A"/>
+    <addaction name="separator"/>
+    <addaction name="action_I"/>
+    <addaction name="action_E"/>
+    <addaction name="separator"/>
+    <addaction name="action_U"/>
+    <addaction name="action_P"/>
+    <addaction name="separator"/>
+    <addaction name="action_Y"/>
+    <addaction name="action_U_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_Z"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <addaction name="action_U_3"/>
+    <addaction name="action_C"/>
+    <addaction name="action_P_2"/>
+    <addaction name="action_D"/>
+    <addaction name="separator"/>
+    <addaction name="action_T"/>
+    <addaction name="action_V_2"/>
+    <addaction name="action_W_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_X"/>
+    <addaction name="action_M"/>
+    <addaction name="action_F"/>
+    <addaction name="action_O_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_N_2"/>
+    <addaction name="action_Y_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_N_3"/>
+    <addaction name="action_Z_3"/>
+    <addaction name="action_L"/>
+    <addaction name="action_G"/>
+    <addaction name="action_R_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_V">
+    <property name="title">
+     <string>视图(&amp;V)</string>
+    </property>
+    <widget class="QMenu" name="menu_Y">
+     <property name="title">
+      <string>复制到剪贴板(Y)</string>
+     </property>
+     <addaction name="action_B"/>
+     <addaction name="action_M_2"/>
+    </widget>
+    <widget class="QMenu" name="menu_X">
+     <property name="title">
+      <string>工具条(X)</string>
+     </property>
+     <addaction name="action_M_3"/>
+     <addaction name="action_T_3"/>
+     <addaction name="action_Z_5"/>
+     <addaction name="action_S_2"/>
+     <addaction name="separator"/>
+     <addaction name="action_Y_4"/>
+     <addaction name="action_O_4"/>
+     <addaction name="action_C_3"/>
+     <addaction name="action_U_5"/>
+     <addaction name="separator"/>
+     <addaction name="action_R_4"/>
+    </widget>
+    <widget class="QMenu" name="menu_T">
+     <property name="title">
+      <string>储存视图(T)</string>
+     </property>
+     <addaction name="action_1"/>
+     <addaction name="action_18"/>
+     <addaction name="action_19"/>
+     <addaction name="action_20"/>
+     <addaction name="action_21"/>
+    </widget>
+    <widget class="QMenu" name="menu_R_2">
+     <property name="title">
+      <string>调出已有视图(R)</string>
+     </property>
+     <addaction name="action_22"/>
+     <addaction name="action_23"/>
+     <addaction name="action_24"/>
+     <addaction name="action_25"/>
+     <addaction name="action_26"/>
+    </widget>
+    <addaction name="action_U_4"/>
+    <addaction name="action_P_xy"/>
+    <addaction name="action_S_yz"/>
+    <addaction name="action_F_xz"/>
+    <addaction name="action_O_3"/>
+    <addaction name="action_A_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_W_3"/>
+    <addaction name="action_J"/>
+    <addaction name="action_Z_4"/>
+    <addaction name="separator"/>
+    <addaction name="action_G_2"/>
+    <addaction name="action_C_2"/>
+    <addaction name="action_Q"/>
+    <addaction name="separator"/>
+    <addaction name="menu_Y"/>
+    <addaction name="action_B_2"/>
+    <addaction name="menu_X"/>
+    <addaction name="separator"/>
+    <addaction name="menu_T"/>
+    <addaction name="menu_R_2"/>
+    <addaction name="action_V_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_R_3">
+    <property name="title">
+     <string>绘图(&amp;R)</string>
+    </property>
+    <addaction name="action_I_2"/>
+    <addaction name="action_L_2"/>
+    <addaction name="action_P_3"/>
+    <addaction name="action_R_5"/>
+    <addaction name="action_Z_6"/>
+    <addaction name="separator"/>
+    <addaction name="action_W_4"/>
+    <addaction name="action_V_4"/>
+    <addaction name="action_X_3"/>
+    <addaction name="action_D_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_T_4"/>
+    <addaction name="action_S_3"/>
+    <addaction name="action_C_4"/>
+    <addaction name="action_A_3"/>
+    <addaction name="separator"/>
+    <addaction name="action_O_5"/>
+    <addaction name="action_Y_5"/>
+   </widget>
+   <widget class="QMenu" name="menu_S">
+    <property name="title">
+     <string>选择(&amp;S)</string>
+    </property>
+    <widget class="QMenu" name="menu_E_2">
+     <property name="title">
+      <string>根据元素类型(E)</string>
+     </property>
+     <addaction name="action_V_6"/>
+     <addaction name="action_R_7"/>
+     <addaction name="action_F_2"/>
+     <addaction name="action_C_6"/>
+     <addaction name="action_W_6"/>
+     <addaction name="action_P_5"/>
+     <addaction name="action_X_5"/>
+     <addaction name="action_N_5"/>
+     <addaction name="action_D_3"/>
+     <addaction name="separator"/>
+     <addaction name="action_O_7"/>
+     <addaction name="action_S_5"/>
+     <addaction name="action_Y_7"/>
+     <addaction name="action_L_3"/>
+     <addaction name="action_A_5"/>
+     <addaction name="action_M_5"/>
+     <addaction name="action_I_4"/>
+     <addaction name="separator"/>
+     <addaction name="action_Z_8"/>
+    </widget>
+    <widget class="QMenu" name="menu_X_2">
+     <property name="title">
+      <string>根据方向(X)</string>
+     </property>
+     <addaction name="action_Z_Z"/>
+     <addaction name="action_Z_U"/>
+     <addaction name="separator"/>
+     <addaction name="action_X_X"/>
+     <addaction name="action_X_V"/>
+     <addaction name="separator"/>
+     <addaction name="action_Y_Y"/>
+     <addaction name="action_Y_W"/>
+    </widget>
+    <addaction name="action_O_6"/>
+    <addaction name="action_W_5"/>
+    <addaction name="separator"/>
+    <addaction name="action_M_4"/>
+    <addaction name="separator"/>
+    <addaction name="action_A_4"/>
+    <addaction name="action_N_4"/>
+    <addaction name="action_V_5"/>
+    <addaction name="action_J_2"/>
+    <addaction name="action_P_4"/>
+    <addaction name="action_C_5"/>
+    <addaction name="action_R_6"/>
+    <addaction name="separator"/>
+    <addaction name="menu_E_2"/>
+    <addaction name="menu_X_2"/>
+    <addaction name="action_I_3"/>
+    <addaction name="action_S_4"/>
+    <addaction name="action_Y_6"/>
+    <addaction name="action_Z_7"/>
+   </widget>
+   <widget class="QMenu" name="menu_O">
+    <property name="title">
+     <string>修改(&amp;O)</string>
+    </property>
+    <widget class="QMenu" name="menu_C">
+     <property name="title">
+      <string>剪切平面(C)</string>
+     </property>
+     <addaction name="action_Z_10"/>
+     <addaction name="separator"/>
+     <addaction name="action_E_3"/>
+     <addaction name="action_T_6"/>
+    </widget>
+    <addaction name="action_W_7"/>
+    <addaction name="action_M_6"/>
+    <addaction name="separator"/>
+    <addaction name="action_T_5"/>
+    <addaction name="menu_C"/>
+    <addaction name="action_A_6"/>
+    <addaction name="separator"/>
+    <addaction name="action_I_5"/>
+    <addaction name="action_D_4"/>
+    <addaction name="separator"/>
+    <addaction name="action_N_6"/>
+    <addaction name="action_U_6"/>
+    <addaction name="action_S_6"/>
+    <addaction name="action_X_6"/>
+    <addaction name="action_Y_8"/>
+    <addaction name="separator"/>
+    <addaction name="action_F_3"/>
+    <addaction name="action_B_3"/>
+    <addaction name="action_Z_9"/>
+    <addaction name="action_J_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_M">
+    <property name="title">
+     <string>模型(&amp;M)</string>
+    </property>
+    <addaction name="action_U_7"/>
+    <addaction name="separator"/>
+    <addaction name="action_OpenTextureLib"/>
+    <addaction name="action_Z_11"/>
+    <addaction name="action_E_2"/>
+    <addaction name="action_S_7"/>
+    <addaction name="separator"/>
+    <addaction name="action_V_7"/>
+    <addaction name="action_C_7"/>
+    <addaction name="action_W_8"/>
+    <addaction name="separator"/>
+    <addaction name="action_I_6"/>
+    <addaction name="action_X_2"/>
+    <addaction name="action_Y_3"/>
+    <addaction name="separator"/>
+    <addaction name="action_H"/>
+    <addaction name="action_H_2"/>
+    <addaction name="action_L_4"/>
+   </widget>
+   <widget class="QMenu" name="menu_D">
+    <property name="title">
+     <string>显示(&amp;D)</string>
+    </property>
+    <widget class="QMenu" name="menu_J">
+     <property name="title">
+      <string>物体属性值(J)</string>
+     </property>
+     <addaction name="action_10"/>
+     <addaction name="action_11"/>
+     <addaction name="action_12"/>
+     <addaction name="separator"/>
+     <addaction name="action_T_7"/>
+     <addaction name="action_V_8"/>
+     <addaction name="action_C_8"/>
+     <addaction name="separator"/>
+     <addaction name="action_E_5"/>
+     <addaction name="action_S_9"/>
+    </widget>
+    <widget class="QMenu" name="menu_E_3">
+     <property name="title">
+      <string>显示详细程度(E)</string>
+     </property>
+     <addaction name="action_N_8"/>
+     <addaction name="action_P_6"/>
+     <addaction name="action_F_4"/>
+     <addaction name="separator"/>
+     <addaction name="action_S_10"/>
+    </widget>
+    <widget class="QMenu" name="menu_O_2">
+     <property name="title">
+      <string>投影选项(O)</string>
+     </property>
+     <addaction name="action_S_11"/>
+     <addaction name="action_P_7"/>
+     <addaction name="action_F_5"/>
+     <addaction name="action_O_9"/>
+     <addaction name="action_G_3"/>
+     <addaction name="separator"/>
+     <addaction name="action_R_3"/>
+     <addaction name="separator"/>
+     <addaction name="action_H_3"/>
+     <addaction name="action_Z_13"/>
+     <addaction name="action_N_9"/>
+     <addaction name="action_T_8"/>
+     <addaction name="action_D_5"/>
+     <addaction name="action_Y_9"/>
+     <addaction name="action_A_8"/>
+    </widget>
+    <widget class="QMenu" name="menu_A">
+     <property name="title">
+      <string>分析网格(A)</string>
+     </property>
+     <addaction name="action_G_4"/>
+     <addaction name="action_X_4"/>
+     <addaction name="action_A_9"/>
+     <addaction name="action_S_12"/>
+    </widget>
+    <addaction name="action_M_8"/>
+    <addaction name="action_S_8"/>
+    <addaction name="action_N_7"/>
+    <addaction name="action_R"/>
+    <addaction name="separator"/>
+    <addaction name="action_OpenGL_G"/>
+    <addaction name="action_VRML_V"/>
+    <addaction name="separator"/>
+    <addaction name="menu_J"/>
+    <addaction name="action_Z_12"/>
+    <addaction name="separator"/>
+    <addaction name="action_T_2"/>
+    <addaction name="action_B_4"/>
+    <addaction name="menu_E_3"/>
+    <addaction name="separator"/>
+    <addaction name="menu_O_2"/>
+    <addaction name="menu_A"/>
+   </widget>
+   <widget class="QMenu" name="menu_C_2">
+    <property name="title">
+     <string>计算(&amp;C)</string>
+    </property>
+    <widget class="QMenu" name="menu_H_2">
+     <property name="title">
+      <string>遮挡和投影(H)</string>
+     </property>
+     <widget class="QMenu" name="menu_O_3">
+      <property name="title">
+       <string>从选定物体投射光线(O)</string>
+      </property>
+      <addaction name="action_E_7"/>
+      <addaction name="action_S_15"/>
+     </widget>
+     <widget class="QMenu" name="menu_T_3">
+      <property name="title">
+       <string>从表形原点投射光线(T)</string>
+      </property>
+      <addaction name="action_H_5"/>
+      <addaction name="action_A_11"/>
+      <addaction name="action_Z_15"/>
+      <addaction name="separator"/>
+      <addaction name="action_S_16"/>
+     </widget>
+     <addaction name="action_D_6"/>
+     <addaction name="separator"/>
+     <addaction name="menu_O_3"/>
+     <addaction name="menu_T_3"/>
+     <addaction name="separator"/>
+     <addaction name="action_R_9"/>
+     <addaction name="action_Y_11"/>
+     <addaction name="action_S_14"/>
+     <addaction name="action_V_10"/>
+    </widget>
+    <widget class="QMenu" name="menu_W">
+     <property name="title">
+      <string>建筑规范(W)</string>
+     </property>
+     <addaction name="action_Part_L_P"/>
+     <addaction name="action_SAP_S"/>
+     <addaction name="action_BCA_B"/>
+    </widget>
+    <addaction name="action_Z_14"/>
+    <addaction name="action_I_7"/>
+    <addaction name="separator"/>
+    <addaction name="menu_H_2"/>
+    <addaction name="action_Q_2"/>
+    <addaction name="action_S_13"/>
+    <addaction name="action_E_6"/>
+    <addaction name="separator"/>
+    <addaction name="action_L_5"/>
+    <addaction name="action_V_9"/>
+    <addaction name="separator"/>
+    <addaction name="menu_W"/>
+    <addaction name="separator"/>
+    <addaction name="action_T_9"/>
+    <addaction name="action_X_7"/>
+    <addaction name="separator"/>
+    <addaction name="action_Y_10"/>
+    <addaction name="action_R_8"/>
+    <addaction name="action_A_10"/>
+    <addaction name="separator"/>
+    <addaction name="action_P_8"/>
+    <addaction name="action_U_8"/>
+    <addaction name="action_M_9"/>
+    <addaction name="separator"/>
+    <addaction name="action_O_10"/>
+   </widget>
+   <widget class="QMenu" name="menu_T_2">
+    <property name="title">
+     <string>工具(&amp;T)</string>
+    </property>
+    <addaction name="action_E_8"/>
+    <addaction name="action_C_9"/>
+    <addaction name="action_S_17"/>
+    <addaction name="separator"/>
+    <addaction name="action_W_10"/>
+    <addaction name="actionRadiance_R"/>
+    <addaction name="action_M_10"/>
+    <addaction name="action_Z_16"/>
+    <addaction name="separator"/>
+    <addaction name="action_HTB2_H"/>
+    <addaction name="actionLCAid"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="action_H_6"/>
+    <addaction name="action_Y_12"/>
+    <addaction name="action_T_11"/>
+    <addaction name="separator"/>
+    <addaction name="actionECOTECT_E"/>
+    <addaction name="actionECOTECT_C"/>
+    <addaction name="actionSquare_One_S"/>
+    <addaction name="separator"/>
+    <addaction name="action_Z_17"/>
+    <addaction name="separator"/>
+    <addaction name="action_ECOTECT_A"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_V"/>
+   <addaction name="menu_R_3"/>
+   <addaction name="menu_S"/>
+   <addaction name="menu_O"/>
+   <addaction name="menu_M"/>
+   <addaction name="menu_D"/>
+   <addaction name="menu_C_2"/>
+   <addaction name="menu_T_2"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_M_4"/>
+   <addaction name="action_O_7"/>
+   <addaction name="action_I_4"/>
+   <addaction name="action_P_3"/>
+   <addaction name="action_R_5"/>
+   <addaction name="action_Z_6"/>
+   <addaction name="action_Y_5"/>
+   <addaction name="action_T_4"/>
+   <addaction name="action_S_3"/>
+   <addaction name="action_C_4"/>
+   <addaction name="action_A_3"/>
+   <addaction name="action_O_5"/>
+   <addaction name="action_I_5"/>
+   <addaction name="action_D_4"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>341</width>
+     <height>79</height>
+    </size>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="windowTitle">
+    <string>捕捉工具条</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>4</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <widget class="QTimeEdit" name="timeEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>0</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>H</string>
+     </property>
+     <property name="time">
+      <time>
+       <hour>0</hour>
+       <minute>0</minute>
+       <second>0</second>
+      </time>
+     </property>
+    </widget>
+    <widget class="QTimeEdit" name="timeEdit_4">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>0</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>mm</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/buzuogjt.jpg</normaloff>:/E3/Resources/buzuogjt.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_23">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>0</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>应用到副本</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_24">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>10</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>保持比例</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_6">
+     <property name="geometry">
+      <rect>
+       <x>273</x>
+       <y>0</y>
+       <width>20</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>274</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="distance1"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="distance2"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_4">
+   <attribute name="dockWidgetArea">
+    <number>4</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_6">
+    <widget class="QTimeEdit" name="timeEdit_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>51</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>H:mm</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>0</y>
+       <width>41</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>d</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>51</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimumTime">
+      <time>
+       <hour>0</hour>
+       <minute>0</minute>
+       <second>0</second>
+      </time>
+     </property>
+     <property name="currentSection">
+      <enum>QDateTimeEdit::MonthSection</enum>
+     </property>
+     <property name="displayFormat">
+      <string>M</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_11">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>0</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/jweidu.jpg</normaloff>:/E3/Resources/jweidu.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_68">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>0</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>气候：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_69">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>0</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>[无数据文件]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_70">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>纬度：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_71">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>-32.0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_72">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>20</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>经度：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_73">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>20</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>116.0</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_5">
+   <attribute name="dockWidgetArea">
+    <number>4</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_7">
+    <widget class="QToolButton" name="toolButton_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/cexiao-10.jpg</normaloff>:/E3/Resources/cexiao-10.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>0</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/xinjianmox-1.jpg</normaloff>:/E3/Resources/xinjianmox-1.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_3">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>0</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/openicon-2.jpg</normaloff>:/E3/Resources/openicon-2.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_4">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>0</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/save-3.jpg</normaloff>:/E3/Resources/save-3.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_5">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>0</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/zidy-5.jpg</normaloff>:/E3/Resources/zidy-5.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_6">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>0</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/moxingsz-6.jpg</normaloff>:/E3/Resources/moxingsz-6.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_7">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>0</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/caizishux-7.jpg</normaloff>:/E3/Resources/caizishux-7.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_8">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>0</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/shijianbiaoji-8.jpg</normaloff>:/E3/Resources/shijianbiaoji-8.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_9">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>0</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/quyuglq-9.jpg</normaloff>:/E3/Resources/quyuglq-9.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_10">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>0</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/cexiao-10.jpg</normaloff>:/E3/Resources/cexiao-10.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_24">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>0</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/fanhui-11.jpg</normaloff>:/E3/Resources/fanhui-11.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_25">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>0</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="RMMV.qrc">
+       <normaloff>:/E3/Resources/banzhu-12.jpg</normaloff>:/E3/Resources/banzhu-12.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <action name="action_N">
+   <property name="text">
+    <string>新建(&amp;N)</string>
+   </property>
+  </action>
+  <action name="action_W">
+   <property name="text">
+    <string>新建窗口(W)</string>
+   </property>
+  </action>
+  <action name="action_O">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/openicon-2.jpg</normaloff>:/E3/Resources/openicon-2.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>打开(O)</string>
+   </property>
+  </action>
+  <action name="action_V">
+   <property name="text">
+    <string>返回(V)</string>
+   </property>
+  </action>
+  <action name="action_S">
+   <property name="text">
+    <string>保存(S)</string>
+   </property>
+  </action>
+  <action name="action_A">
+   <property name="text">
+    <string>另存为(A)...</string>
+   </property>
+  </action>
+  <action name="action_I">
+   <property name="text">
+    <string>导出(I)</string>
+   </property>
+  </action>
+  <action name="action_E">
+   <property name="text">
+    <string>输出(E)</string>
+   </property>
+  </action>
+  <action name="action_U">
+   <property name="text">
+    <string>打印设置(T)</string>
+   </property>
+  </action>
+  <action name="action_P">
+   <property name="text">
+    <string>打印(P)</string>
+   </property>
+  </action>
+  <action name="action_Y">
+   <property name="text">
+    <string>项目信息(Y)...</string>
+   </property>
+  </action>
+  <action name="action_U_2">
+   <property name="text">
+    <string>自定义设置(U)...</string>
+   </property>
+  </action>
+  <action name="action_Z">
+   <property name="text">
+    <string>退出(Z)</string>
+   </property>
+  </action>
+  <action name="action_Z_2">
+   <property name="text">
+    <string>没有文件加载(Z)</string>
+   </property>
+  </action>
+  <action name="action_U_3">
+   <property name="text">
+    <string>剪切(U)</string>
+   </property>
+  </action>
+  <action name="action_C">
+   <property name="text">
+    <string>复制(C)</string>
+   </property>
+  </action>
+  <action name="action_P_2">
+   <property name="text">
+    <string>粘贴(P)</string>
+   </property>
+  </action>
+  <action name="action_D">
+   <property name="text">
+    <string>删除(D)</string>
+   </property>
+  </action>
+  <action name="action_T">
+   <property name="text">
+    <string>无法撤销(T)</string>
+   </property>
+  </action>
+  <action name="action_V_2">
+   <property name="text">
+    <string>放弃上一撤销操作(V)</string>
+   </property>
+  </action>
+  <action name="action_W_2">
+   <property name="text">
+    <string>无法重复(W)</string>
+   </property>
+  </action>
+  <action name="action_X">
+   <property name="text">
+    <string>创建副本(X)</string>
+   </property>
+  </action>
+  <action name="action_M">
+   <property name="text">
+    <string>物体变形(M)</string>
+   </property>
+  </action>
+  <action name="action_F">
+   <property name="text">
+    <string>表面变形(F)</string>
+   </property>
+  </action>
+  <action name="action_O_2">
+   <property name="text">
+    <string>偏移(O)</string>
+   </property>
+  </action>
+  <action name="action_N_2">
+   <property name="text">
+    <string>停止关联(N)</string>
+   </property>
+  </action>
+  <action name="action_Y_2">
+   <property name="text">
+    <string>关闭撤销功能(Y)</string>
+   </property>
+  </action>
+  <action name="action_N_3">
+   <property name="text">
+    <string>关联物体(N)</string>
+   </property>
+  </action>
+  <action name="action_Z_3">
+   <property name="text">
+    <string>解除关联(Z)</string>
+   </property>
+  </action>
+  <action name="action_L">
+   <property name="text">
+    <string>校正关联(L)</string>
+   </property>
+  </action>
+  <action name="action_G">
+   <property name="text">
+    <string>物体编组(G)</string>
+   </property>
+  </action>
+  <action name="action_R_2">
+   <property name="text">
+    <string>解除编组(R)</string>
+   </property>
+  </action>
+  <action name="action_U_4">
+   <property name="text">
+    <string>撤销上一视图操作(U)</string>
+   </property>
+  </action>
+  <action name="action_P_xy">
+   <property name="text">
+    <string>平面图(P)[xy]</string>
+   </property>
+  </action>
+  <action name="action_S_yz">
+   <property name="text">
+    <string>侧视图(S)[yz]</string>
+   </property>
+  </action>
+  <action name="action_F_xz">
+   <property name="text">
+    <string>前视图(F)[xz]</string>
+   </property>
+  </action>
+  <action name="action_O_3">
+   <property name="text">
+    <string>透视图(O)</string>
+   </property>
+  </action>
+  <action name="action_A_2">
+   <property name="text">
+    <string>轴测图(A)</string>
+   </property>
+  </action>
+  <action name="action_W_3">
+   <property name="text">
+    <string>窗口缩放(W)</string>
+   </property>
+  </action>
+  <action name="action_J">
+   <property name="text">
+    <string>视图匹配物体(J)</string>
+   </property>
+  </action>
+  <action name="action_Z_4">
+   <property name="text">
+    <string>视图匹配网格(Z)</string>
+   </property>
+  </action>
+  <action name="action_G_2">
+   <property name="text">
+    <string>网格匹配模型(G)</string>
+   </property>
+  </action>
+  <action name="action_C_2">
+   <property name="text">
+    <string>自定义网格范围(C)</string>
+   </property>
+  </action>
+  <action name="action_Q">
+   <property name="text">
+    <string>网格设置(Q)</string>
+   </property>
+  </action>
+  <action name="action_B">
+   <property name="text">
+    <string>位图文件(B)</string>
+   </property>
+  </action>
+  <action name="action_M_2">
+   <property name="text">
+    <string>图文文件(M)</string>
+   </property>
+  </action>
+  <action name="action_B_2">
+   <property name="text">
+    <string>背景图像(B)</string>
+   </property>
+  </action>
+  <action name="action_V_3">
+   <property name="text">
+    <string>视图设置(V)</string>
+   </property>
+  </action>
+  <action name="action_M_3">
+   <property name="text">
+    <string>菜单(M)</string>
+   </property>
+  </action>
+  <action name="action_T_3">
+   <property name="text">
+    <string>主工具条(T)</string>
+   </property>
+  </action>
+  <action name="action_Z_5">
+   <property name="text">
+    <string>区域/指针(Z)</string>
+   </property>
+  </action>
+  <action name="action_S_2">
+   <property name="text">
+    <string>捕捉工具条(S)</string>
+   </property>
+  </action>
+  <action name="action_Y_4">
+   <property name="text">
+    <string>变形(Y)</string>
+   </property>
+  </action>
+  <action name="action_O_4">
+   <property name="text">
+    <string>建模(O)</string>
+   </property>
+  </action>
+  <action name="action_C_3">
+   <property name="text">
+    <string>子物体(C)</string>
+   </property>
+  </action>
+  <action name="action_U_5">
+   <property name="text">
+    <string>撤销(U)</string>
+   </property>
+  </action>
+  <action name="action_R_4">
+   <property name="text">
+    <string>重置(R)</string>
+   </property>
+  </action>
+  <action name="action_1">
+   <property name="text">
+    <string>视图1</string>
+   </property>
+  </action>
+  <action name="action_18">
+   <property name="text">
+    <string>视图2</string>
+   </property>
+  </action>
+  <action name="action_19">
+   <property name="text">
+    <string>视图3</string>
+   </property>
+  </action>
+  <action name="action_20">
+   <property name="text">
+    <string>视图4</string>
+   </property>
+  </action>
+  <action name="action_21">
+   <property name="text">
+    <string>视图5</string>
+   </property>
+  </action>
+  <action name="action_22">
+   <property name="text">
+    <string>视图1</string>
+   </property>
+  </action>
+  <action name="action_23">
+   <property name="text">
+    <string>视图2</string>
+   </property>
+  </action>
+  <action name="action_24">
+   <property name="text">
+    <string>视图3</string>
+   </property>
+  </action>
+  <action name="action_25">
+   <property name="text">
+    <string>视图4</string>
+   </property>
+  </action>
+  <action name="action_26">
+   <property name="text">
+    <string>视图5</string>
+   </property>
+  </action>
+  <action name="action_I_2">
+   <property name="text">
+    <string>点(I)</string>
+   </property>
+  </action>
+  <action name="action_L_2">
+   <property name="text">
+    <string>线(L)</string>
+   </property>
+  </action>
+  <action name="action_P_3">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/pingmian.jpg</normaloff>:/E3/Resources/pingmian.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>面(P)</string>
+   </property>
+  </action>
+  <action name="action_R_5">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/ti.jpg</normaloff>:/E3/Resources/ti.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>隔断(R)</string>
+   </property>
+  </action>
+  <action name="action_Z_6">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/quyu.jpg</normaloff>:/E3/Resources/quyu.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>区域(Z)</string>
+   </property>
+  </action>
+  <action name="action_W_4">
+   <property name="text">
+    <string>窗户(W)</string>
+   </property>
+  </action>
+  <action name="action_V_4">
+   <property name="text">
+    <string>洞(V)</string>
+   </property>
+  </action>
+  <action name="action_X_3">
+   <property name="text">
+    <string>镶板(X)</string>
+   </property>
+  </action>
+  <action name="action_D_2">
+   <property name="text">
+    <string>门(D)</string>
+   </property>
+  </action>
+  <action name="action_T_4">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/guangyu.jpg</normaloff>:/E3/Resources/guangyu.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>光源(T)</string>
+   </property>
+  </action>
+  <action name="action_S_3">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/fasonti.jpg</normaloff>:/E3/Resources/fasonti.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>声源(S)</string>
+   </property>
+  </action>
+  <action name="action_C_4">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/xji2.jpg</normaloff>:/E3/Resources/xji2.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>相机(C)</string>
+   </property>
+  </action>
+  <action name="action_A_3">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/dn.jpg</normaloff>:/E3/Resources/dn.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>器具(A)</string>
+   </property>
+  </action>
+  <action name="action_O_5">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/ziwuti.jpg</normaloff>:/E3/Resources/ziwuti.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>插入子物体(O)</string>
+   </property>
+  </action>
+  <action name="action_Y_5">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/powuding.jpg</normaloff>:/E3/Resources/powuding.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>坡屋顶(Y)</string>
+   </property>
+  </action>
+  <action name="action_O_6">
+   <property name="text">
+    <string>点模式(O)</string>
+   </property>
+  </action>
+  <action name="action_W_5">
+   <property name="text">
+    <string>极坐标模式(W)</string>
+   </property>
+  </action>
+  <action name="action_M_4">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/xji.jpg</normaloff>:/E3/Resources/xji.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>量取距离(M)</string>
+   </property>
+  </action>
+  <action name="action_A_4">
+   <property name="text">
+    <string>全选(A)</string>
+   </property>
+  </action>
+  <action name="action_N_4">
+   <property name="text">
+    <string>取消选择(N)</string>
+   </property>
+  </action>
+  <action name="action_V_5">
+   <property name="text">
+    <string>反选(V)</string>
+   </property>
+  </action>
+  <action name="action_J_2">
+   <property name="text">
+    <string>循环选择(J)</string>
+   </property>
+  </action>
+  <action name="action_P_4">
+   <property name="text">
+    <string>上一选集(P)</string>
+   </property>
+  </action>
+  <action name="action_C_5">
+   <property name="text">
+    <string>子物体(C)</string>
+   </property>
+  </action>
+  <action name="action_R_6">
+   <property name="text">
+    <string>父物体(R)</string>
+   </property>
+  </action>
+  <action name="action_I_3">
+   <property name="text">
+    <string>根据物体索引(I)...</string>
+   </property>
+  </action>
+  <action name="action_S_4">
+   <property name="text">
+    <string>根据时间表(S)...</string>
+   </property>
+  </action>
+  <action name="action_Y_6">
+   <property name="text">
+    <string>根据材质(Y)...</string>
+   </property>
+  </action>
+  <action name="action_Z_7">
+   <property name="text">
+    <string>根据区域(Z)...</string>
+   </property>
+  </action>
+  <action name="action_V_6">
+   <property name="text">
+    <string>洞(V)</string>
+   </property>
+  </action>
+  <action name="action_R_7">
+   <property name="text">
+    <string>屋顶(R)</string>
+   </property>
+  </action>
+  <action name="action_F_2">
+   <property name="text">
+    <string>地板(F)</string>
+   </property>
+  </action>
+  <action name="action_C_6">
+   <property name="text">
+    <string>天花板(C)</string>
+   </property>
+  </action>
+  <action name="action_W_6">
+   <property name="text">
+    <string>墙(W)</string>
+   </property>
+  </action>
+  <action name="action_P_5">
+   <property name="text">
+    <string>隔断(P)</string>
+   </property>
+  </action>
+  <action name="action_X_5">
+   <property name="text">
+    <string>窗户(X)</string>
+   </property>
+  </action>
+  <action name="action_N_5">
+   <property name="text">
+    <string>镶板(N)</string>
+   </property>
+  </action>
+  <action name="action_D_3">
+   <property name="text">
+    <string>门(D)</string>
+   </property>
+  </action>
+  <action name="action_O_7">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/diand.jpg</normaloff>:/E3/Resources/diand.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>点(O)</string>
+   </property>
+  </action>
+  <action name="action_S_5">
+   <property name="text">
+    <string>太阳能收集器(S)</string>
+   </property>
+  </action>
+  <action name="action_Y_7">
+   <property name="text">
+    <string>声源(Y)</string>
+   </property>
+  </action>
+  <action name="action_L_3">
+   <property name="text">
+    <string>光源(L)</string>
+   </property>
+  </action>
+  <action name="action_A_5">
+   <property name="text">
+    <string>器具(A)</string>
+   </property>
+  </action>
+  <action name="action_M_5">
+   <property name="text">
+    <string>相机(M)</string>
+   </property>
+  </action>
+  <action name="action_I_4">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/zhixiang.jpg</normaloff>:/E3/Resources/zhixiang.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>直线(I)</string>
+   </property>
+  </action>
+  <action name="action_Z_8">
+   <property name="text">
+    <string>零面积平面(Z)</string>
+   </property>
+  </action>
+  <action name="action_Z_Z">
+   <property name="text">
+    <string>向上(+Z)(Z)</string>
+   </property>
+  </action>
+  <action name="action_Z_U">
+   <property name="text">
+    <string>向下(-Z)(U)</string>
+   </property>
+  </action>
+  <action name="action_X_X">
+   <property name="text">
+    <string>向右(+X)(X)</string>
+   </property>
+  </action>
+  <action name="action_X_V">
+   <property name="text">
+    <string>向左(-X)(V)</string>
+   </property>
+  </action>
+  <action name="action_Y_Y">
+   <property name="text">
+    <string>向后(+Y)(Y)</string>
+   </property>
+  </action>
+  <action name="action_Y_W">
+   <property name="text">
+    <string>向前(-Y)(W)</string>
+   </property>
+  </action>
+  <action name="action_W_7">
+   <property name="text">
+    <string>移动到区域(W)...</string>
+   </property>
+  </action>
+  <action name="action_M_6">
+   <property name="text">
+    <string>移动到当前区域(M)</string>
+   </property>
+  </action>
+  <action name="action_T_5">
+   <property name="text">
+    <string>修改(T)</string>
+   </property>
+  </action>
+  <action name="action_A_6">
+   <property name="text">
+    <string>指定为(A)</string>
+   </property>
+  </action>
+  <action name="action_I_5">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/zuihouyig.jpg</normaloff>:/E3/Resources/zuihouyig.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>插入节点(I)</string>
+   </property>
+  </action>
+  <action name="action_D_4">
+   <property name="icon">
+    <iconset resource="RMMV.qrc">
+     <normaloff>:/E3/Resources/zuihouyig.jpg</normaloff>:/E3/Resources/zuihouyig.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>删除节点(D)</string>
+   </property>
+  </action>
+  <action name="action_N_6">
+   <property name="text">
+    <string>翻转法线(N)</string>
+   </property>
+  </action>
+  <action name="action_U_6">
+   <property name="text">
+    <string>表面细分(U)</string>
+   </property>
+  </action>
+  <action name="action_S_6">
+   <property name="text">
+    <string>简化物体节点(S)</string>
+   </property>
+  </action>
+  <action name="action_X_6">
+   <property name="text">
+    <string>合并共面三角形(X)...</string>
+   </property>
+  </action>
+  <action name="action_Y_8">
+   <property name="text">
+    <string>与网格对齐(Y)...</string>
+   </property>
+  </action>
+  <action name="action_F_3">
+   <property name="text">
+    <string>特殊功能(F)</string>
+   </property>
+  </action>
+  <action name="action_B_3">
+   <property name="text">
+    <string>定点打断物体(B)</string>
+   </property>
+  </action>
+  <action name="action_Z_9">
+   <property name="text">
+    <string>两线相交(Z)</string>
+   </property>
+  </action>
+  <action name="action_J_3">
+   <property name="text">
+    <string>两线合并(J)</string>
+   </property>
+  </action>
+  <action name="action_Z_10">
+   <property name="text">
+    <string>清除(Z)</string>
+   </property>
+  </action>
+  <action name="action_E_3">
+   <property name="text">
+    <string>延伸选集(E)</string>
+   </property>
+  </action>
+  <action name="action_T_6">
+   <property name="text">
+    <string>裁剪选集(T)...</string>
+   </property>
+  </action>
+  <action name="action_U_7">
+   <property name="text">
+    <string>日期/时间/地理位置(U)...</string>
+   </property>
+  </action>
+  <action name="action_OpenTextureLib">
+   <property name="text">
+    <string>材质库(M)...</string>
+   </property>
+  </action>
+  <action name="action_Z_11">
+   <property name="text">
+    <string>区域管理(Z)...</string>
+   </property>
+  </action>
+  <action name="action_E_2">
+   <property name="text">
+    <string>时间表编辑器(E)...</string>
+   </property>
+  </action>
+  <action name="action_S_7">
+   <property name="text">
+    <string>模型设置(S)...</string>
+   </property>
+  </action>
+  <action name="action_V_7">
+   <property name="text">
+    <string>移动到指定区域(V)...</string>
+   </property>
+  </action>
+  <action name="action_C_7">
+   <property name="text">
+    <string>移动到当前区域(C)...</string>
+   </property>
+  </action>
+  <action name="action_W_8">
+   <property name="text">
+    <string>指定为当前区域(W)</string>
+   </property>
+  </action>
+  <action name="action_I_6">
+   <property name="text">
+    <string>隔离当前区域(I)</string>
+   </property>
+  </action>
+  <action name="action_X_2">
+   <property name="text">
+    <string>隔离选定的区域(X)</string>
+   </property>
+  </action>
+  <action name="action_Y_3">
+   <property name="text">
+    <string>显示所有隐藏的区域(Y)</string>
+   </property>
+  </action>
+  <action name="action_H">
+   <property name="text">
+    <string>隐藏选定的区域(H)</string>
+   </property>
+  </action>
+  <action name="action_H_2">
+   <property name="text">
+    <string>关闭选定的区域(H)</string>
+   </property>
+  </action>
+  <action name="action_L_4">
+   <property name="text">
+    <string>锁定选定的区域(L)</string>
+   </property>
+  </action>
+  <action name="action_M_8">
+   <property name="text">
+    <string>默认模式(M)</string>
+   </property>
+  </action>
+  <action name="action_S_8">
+   <property name="text">
+    <string>阴影模式(S)</string>
+   </property>
+  </action>
+  <action name="action_N_7">
+   <property name="text">
+    <string>法线模式(N)</string>
+   </property>
+  </action>
+  <action name="action_R">
+   <property name="text">
+    <string>草图模式(R)</string>
+   </property>
+  </action>
+  <action name="action_OpenGL_G">
+   <property name="text">
+    <string>实时OpenGL显示(G)...</string>
+   </property>
+  </action>
+  <action name="action_VRML_V">
+   <property name="text">
+    <string>输出VRML场景(V)...</string>
+   </property>
+  </action>
+  <action name="action_Z_12">
+   <property name="text">
+    <string>区域温度(Z)</string>
+   </property>
+  </action>
+  <action name="action_T_2">
+   <property name="text">
+    <string>显示变形原点(T)</string>
+   </property>
+  </action>
+  <action name="action_B_4">
+   <property name="text">
+    <string>显示背景位图(B)</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>属性1:[无数据]</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>属性2:[无数据]</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="text">
+    <string>属性3:[无数据]</string>
+   </property>
+  </action>
+  <action name="action_T_7">
+   <property name="text">
+    <string>显示文本数据(T)</string>
+   </property>
+  </action>
+  <action name="action_V_8">
+   <property name="text">
+    <string>显示向量(V)</string>
+   </property>
+  </action>
+  <action name="action_C_8">
+   <property name="text">
+    <string>显示颜色(C)</string>
+   </property>
+  </action>
+  <action name="action_E_5">
+   <property name="text">
+    <string>输出数据(E)</string>
+   </property>
+  </action>
+  <action name="action_S_9">
+   <property name="text">
+    <string>色彩设置(S)...</string>
+   </property>
+  </action>
+  <action name="action_N_8">
+   <property name="text">
+    <string>简单(N)</string>
+   </property>
+  </action>
+  <action name="action_P_6">
+   <property name="text">
+    <string>部分(P)</string>
+   </property>
+  </action>
+  <action name="action_F_4">
+   <property name="text">
+    <string>全部(F)</string>
+   </property>
+  </action>
+  <action name="action_S_10">
+   <property name="text">
+    <string>显示节点(S)</string>
+   </property>
+  </action>
+  <action name="action_S_11">
+   <property name="text">
+    <string>显示三维太阳运动轨迹(S)</string>
+   </property>
+  </action>
+  <action name="action_P_7">
+   <property name="text">
+    <string>显示年太阳运行轨迹(P)</string>
+   </property>
+  </action>
+  <action name="action_F_5">
+   <property name="text">
+    <string>平面中建筑遮挡阴影(F)</string>
+   </property>
+  </action>
+  <action name="action_O_9">
+   <property name="text">
+    <string>以轮廓线显示所有阴影(O)</string>
+   </property>
+  </action>
+  <action name="action_G_3">
+   <property name="text">
+    <string>在地面上显示阴影轮廓线(G)</string>
+   </property>
+  </action>
+  <action name="action_R_3">
+   <property name="text">
+    <string>反转阴影属性(R)</string>
+   </property>
+  </action>
+  <action name="action_H_3">
+   <property name="text">
+    <string>隐藏的区域可投射阴影(H)</string>
+   </property>
+  </action>
+  <action name="action_Z_13">
+   <property name="text">
+    <string>隐藏的区域可接受阴影(Z)</string>
+   </property>
+  </action>
+  <action name="action_N_9">
+   <property name="text">
+    <string>仅选定的物体投射阴影(N)</string>
+   </property>
+  </action>
+  <action name="action_T_8">
+   <property name="text">
+    <string>透明反射(T)</string>
+   </property>
+  </action>
+  <action name="action_D_5">
+   <property name="text">
+    <string>绘制反射障碍(D)</string>
+   </property>
+  </action>
+  <action name="action_Y_9">
+   <property name="text">
+    <string>仅显示反射(Y)</string>
+   </property>
+  </action>
+  <action name="action_A_8">
+   <property name="text">
+    <string>仅显示阴影(A)</string>
+   </property>
+  </action>
+  <action name="action_G_4">
+   <property name="text">
+    <string>显示网格(G)</string>
+   </property>
+  </action>
+  <action name="action_X_4">
+   <property name="text">
+    <string>调节范围(X)</string>
+   </property>
+  </action>
+  <action name="action_A_9">
+   <property name="text">
+    <string>动态显示选区(A)</string>
+   </property>
+  </action>
+  <action name="action_S_12">
+   <property name="text">
+    <string>设置(S)...</string>
+   </property>
+  </action>
+  <action name="action_Z_14">
+   <property name="text">
+    <string>区域体积(Z)</string>
+   </property>
+  </action>
+  <action name="action_I_7">
+   <property name="text">
+    <string>内部区域相邻(I)...</string>
+   </property>
+  </action>
+  <action name="action_Q_2">
+   <property name="text">
+    <string>日平均太阳辐射(Q)...</string>
+   </property>
+  </action>
+  <action name="action_S_13">
+   <property name="text">
+    <string>太阳轨迹图(S)...</string>
+   </property>
+  </action>
+  <action name="action_E_6">
+   <property name="text">
+    <string>日照辐射(E)...</string>
+   </property>
+  </action>
+  <action name="action_L_5">
+   <property name="text">
+    <string>采光系数和照度(L)...</string>
+   </property>
+  </action>
+  <action name="action_V_9">
+   <property name="text">
+    <string>全自然光照明分析(V)...</string>
+   </property>
+  </action>
+  <action name="action_T_9">
+   <property name="text">
+    <string>热量分析(T)...</string>
+   </property>
+  </action>
+  <action name="action_X_7">
+   <property name="text">
+    <string>房间热舒适度(X)...</string>
+   </property>
+  </action>
+  <action name="action_Y_10">
+   <property name="text">
+    <string>声学传播设置(Y)...</string>
+   </property>
+  </action>
+  <action name="action_R_8">
+   <property name="text">
+    <string>混响时间统计(R)...</string>
+   </property>
+  </action>
+  <action name="action_A_10">
+   <property name="text">
+    <string>声学响应(A)...</string>
+   </property>
+  </action>
+  <action name="action_P_8">
+   <property name="text">
+    <string>主导风(P)...</string>
+   </property>
+  </action>
+  <action name="action_U_8">
+   <property name="text">
+    <string>消耗资源(U)...</string>
+   </property>
+  </action>
+  <action name="action_M_9">
+   <property name="text">
+    <string>材料造价(M)...</string>
+   </property>
+  </action>
+  <action name="action_O_10">
+   <property name="text">
+    <string>错误消息(O)...</string>
+   </property>
+  </action>
+  <action name="action_D_6">
+   <property name="text">
+    <string>遮阳设计(D)...</string>
+   </property>
+  </action>
+  <action name="action_R_9">
+   <property name="text">
+    <string>阴影变化范围(R)</string>
+   </property>
+  </action>
+  <action name="action_Y_11">
+   <property name="text">
+    <string>显示日光射线(Y)</string>
+   </property>
+  </action>
+  <action name="action_S_14">
+   <property name="text">
+    <string>反向投射日光(S)</string>
+   </property>
+  </action>
+  <action name="action_V_10">
+   <property name="text">
+    <string>从太阳位置观察(V)</string>
+   </property>
+  </action>
+  <action name="action_Part_L_P">
+   <property name="text">
+    <string>英国Part-L兼容性(P)...</string>
+   </property>
+  </action>
+  <action name="action_SAP_S">
+   <property name="text">
+    <string>英国国内SAP等级(S)...</string>
+   </property>
+  </action>
+  <action name="action_BCA_B">
+   <property name="text">
+    <string>澳大利亚BCA(B)...</string>
+   </property>
+  </action>
+  <action name="action_E_7">
+   <property name="text">
+    <string>朝向太阳拉伸(E)</string>
+   </property>
+  </action>
+  <action name="action_S_15">
+   <property name="text">
+    <string>潜在的遮挡分析(S)...</string>
+   </property>
+  </action>
+  <action name="action_H_5">
+   <property name="text">
+    <string>逐时太阳运行轨迹(H)</string>
+   </property>
+  </action>
+  <action name="action_A_11">
+   <property name="text">
+    <string>全年太阳运行轨迹(A)</string>
+   </property>
+  </action>
+  <action name="action_Z_15">
+   <property name="text">
+    <string>等时太阳运行轨迹(Z)</string>
+   </property>
+  </action>
+  <action name="action_S_16">
+   <property name="text">
+    <string>日照曲线(S)...</string>
+   </property>
+  </action>
+  <action name="action_E_8">
+   <property name="text">
+    <string>命令输入框(E)</string>
+   </property>
+  </action>
+  <action name="action_C_9">
+   <property name="text">
+    <string>清除临时文件(C)...</string>
+   </property>
+  </action>
+  <action name="action_S_17">
+   <property name="text">
+    <string>脚本控制(S)...</string>
+   </property>
+  </action>
+  <action name="action_W_10">
+   <property name="text">
+    <string>气象分析(W)...</string>
+   </property>
+  </action>
+  <action name="actionRadiance_R">
+   <property name="text">
+    <string>Radiance控制面板(R)...</string>
+   </property>
+  </action>
+  <action name="action_M_10">
+   <property name="text">
+    <string>点选式世界地图(M)...</string>
+   </property>
+  </action>
+  <action name="action_Z_16">
+   <property name="text">
+    <string>全球地理位置(Z)...</string>
+   </property>
+  </action>
+  <action name="action_HTB2_H">
+   <property name="text">
+    <string>察看HTB2文件(H)...</string>
+   </property>
+  </action>
+  <action name="actionLCAid">
+   <property name="text">
+    <string>LCAid...</string>
+   </property>
+  </action>
+  <action name="action_H_6">
+   <property name="text">
+    <string>帮助主题(H)</string>
+   </property>
+  </action>
+  <action name="action_Y_12">
+   <property name="text">
+    <string>帮助-怎样做？(Y)...</string>
+   </property>
+  </action>
+  <action name="action_T_11">
+   <property name="text">
+    <string>帮助教程(T)</string>
+   </property>
+  </action>
+  <action name="actionECOTECT_E">
+   <property name="text">
+    <string>ECOTECT主页(E)</string>
+   </property>
+  </action>
+  <action name="actionECOTECT_C">
+   <property name="text">
+    <string>ECOTECT支持论坛(C)</string>
+   </property>
+  </action>
+  <action name="actionSquare_One_S">
+   <property name="text">
+    <string>Square One主页(S)</string>
+   </property>
+  </action>
+  <action name="action_Z_17">
+   <property name="text">
+    <string>文本帮助(Z)</string>
+   </property>
+  </action>
+  <action name="action_ECOTECT_A">
+   <property name="text">
+    <string>关于ECOTECT(A)...</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GLWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>glwidget.h</header>
+   <slots>
+    <signal>distance1(string)</signal>
+    <signal>distance2(string)</signal>
+    <signal>formSurface()</signal>
+    <slot>EnabletoDrawSurface()</slot>
+    <slot>EnabletoDrawPartofBody()</slot>
+    <slot>EnabletoDrawBody()</slot>
+    <slot>EnabletoDrawPartofSurface()</slot>
+    <slot>EnabletoChooseObject()</slot>
+    <slot>toFormSurface()</slot>
+    <slot>findGrid()</slot>
+    <slot>TextureSave()</slot>
+    <slot>MultiCut()</slot>
+    <slot>MultiCopy()</slot>
+    <slot>MultiPaste()</slot>
+    <slot>MultiDelete()</slot>
+    <slot>NewProject()</slot>
+    <slot>loadGraph()</slot>
+    <slot>saveGraph()</slot>
+    <slot>printGraph()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="RMMV.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <signal>checkformsurface()</signal>
+  <slot>getDistance1(string)</slot>
+  <slot>getDistance2(string)</slot>
+  <slot>tocheckformsurface()</slot>
+  <slot>saveGraph()</slot>
+  <slot>MultiCopy()</slot>
+ </slots>
+</ui>
